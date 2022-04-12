@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#__nuxt {
+    background-color:  #111827;
+}
+html {
+    background-color:  #111827;
+}

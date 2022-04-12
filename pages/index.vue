@@ -1,7 +1,9 @@
 <template>
-  <div class="container mx-auto p-8">
+  <div class="container bg-text mx-auto ">
     <Hero />
     <Promotionbox />
+    <Reviews />
+    <FAQs />
     <Footer />
   </div>
 </template>

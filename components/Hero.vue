@@ -3,7 +3,7 @@
   <div class="relative bg-white overflow-hidden">
     <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
       <div class="relative h-full max-w-auto mx-auto">
-        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-auto">
+        <video autoplay loop muted class="absolute z-0 w-auto min-w-full min-h-full max-w-auto" style="filter: brightness(50%);">
           <source src="assets/video/Teaser.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -18,7 +18,7 @@
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Workflow</span>
-                  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
+                  <img class="h-8 w-auto sm:h-10" src="assets/images/logo.png" alt="" />
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
                   <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -30,11 +30,6 @@
             </div>
             <div class="hidden md:flex md:space-x-10">
               <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</a>
-            </div>
-            <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-              <span class="inline-flex rounded-md shadow">
-                <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-brand bg-white hover:bg-gray-50"> Log in </a>
-              </span>
             </div>
           </nav>
         </div>
@@ -64,7 +59,7 @@
       <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
         <div class="text-center">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span class="block xl:inline">Arnold Menace</span>
+            <span class="block xl:inline">Arnold Menace <br></span>
             {{ ' ' }}
             <span class="block text-brand xl:inline">Arnold Menace</span>
           </h1>
